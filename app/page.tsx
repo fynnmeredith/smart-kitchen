@@ -25,7 +25,7 @@ export default function Home() {
   const postPreviews = posts.map((post) => {
     return (
       <div key={post.slug} className="flex flex-col m-5 bg-slate-100 p-4 rounded-sm">
-        <Link href={`/posts/${post.slug}`} className="no-underline">
+        <Link href={`/posts/${encodeURIComponent(post.slug)}`} className="no-underline">
           <h3 className="no-underline text-blue-950">
             {post.title}: {post.subtitle}
           </h3>
