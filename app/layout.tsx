@@ -11,7 +11,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   const header = (
     <header className="justify-center flex text-white bg-blue-950 p-6 rounded-sm">
       <div className="flex flex-col">
-        <Link href="/" className="text-center text-white no-underline">
+        <Link href="/posts/hello" className="text-center text-white no-underline">
           <h1 className="text-center text-white no-underline">The Smart Kitchen</h1>
         </Link>
         <p className="text-white text-center mt-4">🥝 Elevate your kitchen</p>
